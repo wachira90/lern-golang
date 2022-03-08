@@ -1,7 +1,27 @@
 # lern-go
 lerning golang
 
-# check version
+## create folder project
+````
+go mod init github.com/wachira90/goredis
+````
+
+## install package
+````
+go get github.com/go-redis/redis/v8
+````
+
+## add mod
+````
+go mod download github.com/go-redis/redis/v8
+````
+
+## check error
+````
+go build
+````
+
+## check version
 
 ````
 C:\Users\admin>go version
