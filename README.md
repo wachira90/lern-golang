@@ -1,6 +1,24 @@
 # lern-go
 lerning golang
 
+# install linux ubuntu 18.04
+
+````
+wget https://go.dev/dl/go1.17.8.linux-amd64.tar.gz
+
+tar -xvf go1.17.8.linux-amd64.tar.gz
+
+sudo mv go/ /usr/local/
+
+nano ~/.profile
+
+export GOPATH=$HOME/go
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
+source .profile
+````
+
+
 ## create folder project
 ````
 go mod init github.com/wachira90/goredis
