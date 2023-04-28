@@ -1,4 +1,4 @@
-# lern-go
+# lern-golang
 lerning golang
 
 # install linux ubuntu 18.04
