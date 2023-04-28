@@ -102,8 +102,15 @@ func homePage(w http.ResponseWriter, r *http.Request){
     fmt.Println("Endpoint Hit: homePage")
 }
 
+func api(w http.ResponseWriter, r *http.Request){
+  fmt.Fprintf(w, "Welcome to the Api!")
+  fmt.Println("Endpoint Hit: Api")
+}
+
 func handleRequests() {
     http.HandleFunc("/", homePage)
+    http.HandleFunc("/api", api)
+    fmt.Println("REST STARTING .... ")
     log.Fatal(http.ListenAndServe(":10000", nil))
 }
 
